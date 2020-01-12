@@ -1,0 +1,98 @@
+{
+	"steps": [
+		{
+			"title": "Basic Info",
+			"description": "Start your app name",
+			"fields": {
+				"name": {
+					"label": "Title",
+					"placeholder": "e.g. Fact App",
+					"type": "text",
+					"required": true,
+					"help": "Add your app title as it appears in the app marketplace"
+				},
+				"files": {
+					"label": "Files",
+					"placeholder": "e.g. https://file.com/file.json",
+					"type": "text",
+					"required": true,
+					"help": "Provide one or multiple urls to your app data logs, be sure not to upload any sensitive or personal information about your users"
+				}
+			}
+		},
+		{
+			"title": "Description",
+			"description": "Further the type of data included in your logs as well as the date range and voice platform used",
+			"fields": {
+				"description": {
+					"label": "Description",
+					"help": "Add a thorough description with as much detail as possible",
+					"placeholder": "e.g. Fact App for Amazon Alexa, includes respose paths for January 2020",
+					"type": "textarea",
+					"required": true,
+					"rows": 5
+				},
+				"categories": {
+		          "label": "Category",
+		          "help": "Pick a category which best fits your data set.",
+		          "type": "select",
+		          "required": true,
+		          "options": [
+		            "Alexa",
+		            "Google",
+		            "Other"
+		          ]
+		        },
+				"dateCreated": {
+					"label": "Upload Date",
+					"help": "Select your data upload date",
+					"type": "date",
+					"required": true
+				}
+			}
+		},
+		{
+			"title": "Authors",
+			"description": "Who published the app?",
+			"fields": {
+				"author": {
+					"label": "Author",
+					"placeholder": "e.g. John Smith",
+					"type": "text",
+					"required": true
+				},
+				"copyrightHolder": {
+					"label": "Copyright Holder",
+					"placeholder": "e.g. Your Company",
+					"type": "text",
+					"required": true
+				},
+				"license": {
+					"label": "License",
+					"type": "select",
+					"required": true,
+					"options": [
+						"Public Domain",
+						"PDDL: Public Domain Dedication and License",
+						"ODC-By: Attribution License",
+						"ODC-ODbL: Open Database License",
+						"CDLA-Sharing: Community Data License Agreement",
+						"CDLA-Permissive: Community Data License Agreement",
+						"CC0: Public Domain Dedication",
+						"CC BY: Attribution 4.0 International",
+						"CC BY-SA: Attribution-ShareAlike 4.0 International",
+						"CC BY-ND: Attribution-NoDerivatives 4.0 International",
+						"CC BY-NC: Attribution-NonCommercial 4.0 International",
+						"CC BY-NC-SA: Attribution-NonCommercial-ShareAlike 4.0 International",
+						"CC BY-NC-ND: Attribution-NonCommercial-NoDerivatives 4.0 International"
+					]
+				}
+			}
+		},
+		{
+			"title": "Register",
+			"description": "Last step is to upload the data",
+			"content": "After clicking the button below you will be asked by your Ocean wallet to sign this request, once published, your data will be available for download on the Sound Waves marketplace"
+		}
+	]
+}

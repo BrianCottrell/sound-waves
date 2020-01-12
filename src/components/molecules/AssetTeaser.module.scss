@@ -1,0 +1,113 @@
+@import '../../styles/variables';
+
+.asset {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    > a {
+        display: block;
+        height: 250px;
+        width: 250px;
+        padding: 40px;
+        border: 10px solid $light-blue;
+        border-radius: $border-radius-item;
+        background: $brand-white;
+        color: inherit;
+        position: relative;
+        opacity: 0.85;
+
+        &:hover,
+        &:focus {
+            color: inherit;
+            border-color: $brand-pink;
+            transform: none;
+
+            // category image
+            > div:first-child {
+                opacity: 1;
+                background-size: 105%;
+            }
+        }
+    }
+
+    h1 {
+        font-size: $font-size-large;
+        color: $dark-blue;
+        margin-top: 0;
+        text-align: center;
+        border-bottom: 2px solid $dark-blue;
+    }
+}
+
+.minimal {
+    h1 {
+        margin-bottom: 20;
+    }
+}
+
+.assetList {
+    > a {
+        color: $brand-grey-dark;
+        border-bottom: 1px solid $brand-grey-lighter;
+        padding-top: $spacer / 2;
+        padding-bottom: $spacer / 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:hover,
+        &:focus {
+            color: $brand-pink;
+            transform: none;
+        }
+    }
+
+    h1 {
+        font-size: $font-size-base;
+        color: inherit;
+        margin: 0;
+    }
+}
+
+.description {
+    &,
+    p,
+    strong,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-weight: $font-weight-base;
+        font-family: $font-family-base;
+        margin-top: 30;
+        margin-bottom: 0;
+        font-size: $font-size-small;
+        color: $brand-grey;
+    }
+}
+
+.date {
+    font-size: $font-size-small;
+    color: $brand-grey-light;
+}
+
+.assetFooter {
+    margin-top: $spacer;
+    font-size: $font-size-small;
+    color: $brand-grey-light;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-top: 2px solid $dark-blue;
+}
+
+.price {
+    font-size: $font-size-mini;
+
+    span {
+        color: $brand-grey;
+        font-size: $font-size-small;
+    }
+}
