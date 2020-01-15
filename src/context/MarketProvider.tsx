@@ -18,7 +18,7 @@ export default class MarketProvider extends PureComponent<MarketProviderProps, M
 
 	public state = {
 		totalAssets: 0,
-		categories: [ 'Alexa' ],
+		categories: [ 'Alexa', 'Google', 'Siri' ],
 		network: 'Pacific',
 		networkMatch: false
 	};

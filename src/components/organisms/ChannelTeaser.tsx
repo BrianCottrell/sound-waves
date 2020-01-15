@@ -83,7 +83,7 @@ export default class ChannelTeaser extends Component<ChannelTeaserProps, Channel
 							{channelAssets.map((asset: any) => <AssetTeaser key={asset.id} asset={asset} />)}
 						</div>
 					) : (
-						<div>No research papers found.</div>
+						<div>No apps found.</div>
 					)}
 				</div>
 			</div>

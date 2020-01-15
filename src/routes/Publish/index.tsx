@@ -280,7 +280,7 @@ class Publish extends Component<{}, PublishState> {
 			additionalInformation: Object.assign(AssetModel.additionalInformation, {
 				description: this.state.description,
 				copyrightHolder: this.state.copyrightHolder,
-				categories: [ 'Alexa' ] // this.state.categories
+				categories: [this.state.categories]
 			})
 		};
 

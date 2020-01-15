@@ -70,7 +70,7 @@ class Search extends PureComponent<SearchProps, SearchState> {
 	private searchAssets = async () => {
 		const { ocean } = this.context;
 		const { offset, currentPage, searchTerm } = this.state;
-		const searchCategories = 'Alexa';
+		const searchCategories = 'Alexa, Google, Siri';
 
 		const queryValues =
 			searchTerm !== ''
@@ -124,8 +124,8 @@ class Search extends PureComponent<SearchProps, SearchState> {
 			</div>
 		) : (
 			<div className={styles.empty}>
-				<p>No Research Papers Found.</p>
-				<Link to="/publish">+ Publish A Research Paper</Link>
+				<p>No Research apps Found.</p>
+				<Link to="/publish">+ Publish app data</Link>
 			</div>
 		);
 

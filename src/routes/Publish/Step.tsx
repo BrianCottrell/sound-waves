@@ -164,7 +164,7 @@ export default class Step extends PureComponent<StepProps, {}> {
                                     }
                                     primary
                                 >
-                                    Upload paper
+                                    Upload data
                                 </Button>
                             )}
                         </Market.Consumer>

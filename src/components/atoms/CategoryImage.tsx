@@ -26,12 +26,14 @@ export default class CategoryImage extends PureComponent<{
     category: string
     header?: boolean
     dimmed?: boolean
+    small?: boolean
 }> {
     public render() {
         const image = categoryImageFile(this.props.category)
         const classNames = cx(styles.categoryImage, {
             [styles.header]: this.props.header,
-            [styles.dimmed]: this.props.dimmed
+            [styles.dimmed]: this.props.dimmed,
+            [styles.small]: this.props.small,
         })
 
         return (

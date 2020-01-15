@@ -2,7 +2,7 @@
 // commons-server connection
 //
 export const serviceUri =
-    process.env.REACT_APP_SERVICE_URI || 'http://localhost:4000'
+    process.env.REACT_APP_SERVICE_URI || 'https://commons-server.oceanprotocol.com';
 
 //
 // OCEAN REMOTE CONNECTIONS
@@ -31,8 +31,7 @@ export const analyticsId = 'UA-60614729-11'
 
 export const showChannels =
     process.env.REACT_APP_SHOW_CHANNELS === 'true' || false
-export const allowPricing =
-    process.env.REACT_APP_ALLOW_PRICING === 'true' || false
+export const allowPricing = true
 export const showRequestTokens =
     process.env.REACT_APP_SHOW_REQUEST_TOKENS_BUTTON === 'true' || false
 // https://ipfs.github.io/public-gateway-checker/

@@ -25,21 +25,11 @@ const AssetTeaser = ({ asset, list, minimal }: { asset: any; list?: boolean; min
 		<article className={minimal ? cx(styles.asset, styles.minimal) : styles.asset}>
 			<Link to={`/asset/${asset.id}`}>
 				{additionalInformation.categories &&
-				!minimal && <CategoryImage dimmed category={additionalInformation.categories[0]} />}
+				<CategoryImage dimmed small category={additionalInformation.categories[0]} />}
 				<h1>{main.name}</h1>
-
 				<div className={styles.description}>
 					<Dotdotdot clamp={3}>{additionalInformation.description}</Dotdotdot>
 				</div>
-					
-				<footer className={styles.assetFooter}>
-					{additionalInformation.categories && <div>{additionalInformation.categories[0]}</div>}
-					{allowPricing && (
-						<div className={styles.price}>
-							<span>{Web3.utils.fromWei(main.price.toString())}</span> OCEAN
-						</div>
-					)}
-				</footer>
 			</Link>
 		</article>
 	);

@@ -99,7 +99,7 @@ export default class Channel extends PureComponent<ChannelProps, ChannelState> {
 				{this.state.results.map((asset: any) => <AssetTeaser key={asset.id} asset={asset} />)}
 			</div>
 		) : (
-			<div>No research papers found.</div>
+			<div>No research apps found.</div>
 		);
 
 	public render() {

@@ -30,7 +30,7 @@ export default class AssetsLatest extends PureComponent<{}, AssetsLatestState> {
         const searchQuery = {
             offset: 15,
             page: 1,
-            query: {categories: ['Alexa']},
+            query: {categories: ['Alexa', 'Google', 'Siri']},
             sort: {
                 created: -1
             }

@@ -54,6 +54,30 @@ class Home extends PureComponent<HomeProps, HomeState> {
                     <AssetsLatest />
                 </Content>
 
+                <Content wide>
+                    <h2 className={styles.title}>Platforms</h2>
+                    <div className={styles.categories}>
+                        <Market.Consumer>
+                            {({ categories }) =>
+                                categories
+                                    .sort((a, b) => a.localeCompare(b)) // sort alphabetically
+                                    .map((category: string) => (
+                                        <CategoryLink
+                                            category={category}
+                                            key={category}
+                                            className={styles.category}
+                                        >
+                                            <h3>{category}</h3>
+                                            <CategoryImage
+                                                category={category}
+                                            />
+                                        </CategoryLink>
+                                    ))
+                            }
+                        </Market.Consumer>
+                    </div>
+                </Content>
+
             </Route>
         )
     }
